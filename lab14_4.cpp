@@ -17,3 +17,20 @@ int main(){
 	
 	return 0;
 }
+	void shuffle(int &a,int &b,int &c,int &d){
+		int y[] = {a,b,c,d};
+	for(int i = 0;i < 4;i++){
+	   int x = rand()%4;
+	   int temp = y[i];
+		y[i] = y[x];
+		y[x] = temp;
+	}
+
+	a = y[0];
+	b= y[1];
+	c = y[2];
+	d = y[3];
+
+
+
+	}
